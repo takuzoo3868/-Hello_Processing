@@ -18,6 +18,7 @@ const trailWidth = 10;
 const getAngle = () => {
     const angle = (PI2 * Math.random());
 
+    // noinspection JSAnnotator
     return angleFF = angle - (angle % FF);
 };
 
@@ -63,7 +64,7 @@ const update = (trail, right, bottom) => {
     }
 
     trail.width *= 0.98;
-}
+};
 
 const render = (trail, ctx, phase) => {
     let { x, y, length, vel, angle } = trail;
